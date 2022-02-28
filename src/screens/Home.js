@@ -11,16 +11,21 @@ import {
 
 function Home(props) {
   return (
-    <View>
+    <View style={styles.div}>
       <Text style={styles.text}>Home Page</Text>
     </View>
   );
 }
 const styles = StyleSheet.create({
+  div: {
+    justifyContent: 'center',
+    // alignItems: 'center',
+    flex: 1,
+  },
   text: {
-    marginTop: 32,
-    textAlign:'center',
-    paddingHorizontal: 24,
-  }
+    marginTop: 0,
+    textAlign: 'center',
+    fontSize: 18,
+  },
 });
 export default Home;
